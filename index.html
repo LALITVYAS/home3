@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typography in Design Systems</title>
+  <style>
+    /* Typography Foundations */
+    :root {
+      --font-primary: 'Arial', sans-serif;
+      --font-secondary: 'Georgia', serif;
+      --font-weight-light: 300;
+      --font-weight-regular: 400;
+      --font-weight-bold: 700;
+      --text-color: #333;
+      --heading-color: #222;
+      --line-height: 1.6;
+    }
+
+    /* Global Styles */
+    body {
+      font-family: var(--font-primary);
+      color: var(--text-color);
+      line-height: var(--line-height);
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      max-width: 550px;  /* Max width for the container */
+      margin: 0 auto;  /* Center the container horizontally */
+      padding: 20px;
+    }
+
+    header h1 {
+      font-family: var(--font-secondary);
+      font-size: 2.5rem;
+      font-weight: var(--font-weight-bold);
+      color: var(--heading-color);
+      text-align: center;  /* Center the header text */
+    }
+
+    .img {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .img img {
+      max-width: 150%; /* Make image responsive */
+      height: auto;
+      align-items: center;
+    }
+
+    section h2 {
+      font-family: var(--font-secondary);
+      font-size: 2rem;
+      font-weight: var(--font-weight-regular);
+      color: var(--heading-color);
+      text-align: left;  /* Left-align the section titles */
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      text-align: left;  /* Left-align the paragraph text */
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    ul li {
+      font-size: 1rem;
+      line-height: 1.5;
+      text-align: left;  /* Left-align the list items */
+    }
+
+    .bold {
+      font-weight: var(--font-weight-bold);
+    }
+
+    .highlight {
+      color: #ff0000;
+    }
+
+    /* YouTube video responsiveness */
+    iframe {
+      max-width: 100%;
+      height: auto;
+      width: 100; /* Make iframe responsive */
+      margin-bottom: 20px;
+    }
+
+    /* Responsive Typography Example */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section h2 {
+        font-size: 1.75rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Typography in Design Systems</h1>
+      <div class="img">
+        <img src="./img/image.png" alt="Aa">
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <p>Everyday digital interfaces include a rich variety of images, visualizations, and other pictures. However, more than anything else, they are made of words. Oh so many words. As we equip teams to design and code usable, consistent, beautiful interfaces using systems, it's essential that words depend on a strong foundation of typography.</p>
+        <p>I'll admit, I am not a typography expert. I lack a graphic design degree. I'm never the person choosing a font, scaling type, or finessing letter spacing. As a result, I've always been reluctant to write about typography.</p>
+      </section>
+
+      <section>
+        <p>On the other hand, I am a pattern hunter. Over the years, I've contributed to many design systems that set a foundation for typography. Each traversed a series of steps and decisions to establish that foundation and apply it to an emerging library of interface components. This article summarizes those patterns.</p>
+      </section>
+
+      <section>
+        <p>Typography starts by setting a foundation of font families and weights along with fallbacks. It then explores how to build hierarchy using size, color, additional details like line-height, and layering responsiveness. Those models are then applied to components in a system's library (like Article and Header) as well as custom components made by other teams.</p>
+      </section>
+
+      <section>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/O-XrRQf7BPM?si=PiNOMZ_EQtFpg7At" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error libero eos, ea aliquam eveniet officia rerum cumque quasi illum totam, veniam vel et.</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
